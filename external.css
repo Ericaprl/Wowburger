@@ -1,0 +1,306 @@
+@font-face {
+    font-family: Myfonts;
+    src: url(./Fonts/Fontspring-DEMO-bebasneuepro-bold.otf);
+}
+
+@font-face {
+    font-family: Mysecondfont;
+    src: url(./Fonts/Fontspring-DEMO-bebasneuepro-book.otf);
+}
+
+/* Page index.html | First Wowburger website recreation  */
+#index-body{
+    background-image: url(/images/wowburger1.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Div created to display the full page  */
+.frontpage {
+    margin: 0;
+    width: 100vw;
+    /* viwport */
+    height: 100vh;
+    /* viwport */
+    position: relative;
+}
+
+
+/* Second image with link to another page in HTML */
+#pic2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+}
+
+/*------------------------------------------------------------------------------------*/
+
+
+/* Page menu.html | Second Wowburger website recreation  */
+
+#menu-body{
+  background-color: #f4f3ef;
+  animation-duration: 3s;
+  animation-name: slidein;
+
+}
+@keyframes slidein {
+  from { margin-left: 100%;
+    width: 200% }
+ to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+/* Div created to display the full page  */
+.content {
+    margin-left: 10%;
+    margin-top: 30px;
+    border: 3px solid red;
+    background-color: yellow;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 40px;
+  
+}
+/* Underline of links takes off */
+a {
+    text-decoration: none;
+}
+
+/* Id to burger picture 1  */
+#b1 {
+    margin: 0;
+    padding: 0;
+    border-right: 3px solid red;
+    width: 26vw;
+    height: 90vh;
+    text-decoration: none;
+}
+/* Id to burger picture 2  */
+#b2 {
+    margin: 0;
+    border-right: 3px solid red;
+    width: 26.6vw;
+    height: 90vh;
+    text-decoration: none;
+}
+
+/* Id to burger picture 3  */
+#b3 {
+    margin: 0;
+    width: 26vw;
+    height: 90vh;
+    text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+/* Page form.html |  Third Wowburger website recreation  */
+
+
+#form-body{
+   
+    background-image: url(./images/back2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;   
+}
+
+/*  Header. 
+Contains the menu 
+The part of the page that can customers navigate to other wowburger pages*/
+header {
+    
+    width: 100vw;
+    height: 20px;
+    font-family: 'Myfonts', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    word-spacing: 20px;
+    animation-duration: 4s;
+    animation-name: slidein;
+
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200% }
+   to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+a{ color: red;  }
+
+#order-online{
+
+    width: 40vw;
+    height: 7vh;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-family: 'Myfonts', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #f00;
+    text-overflow: clip;
+    text-align: center;
+    background-color: #ffff06;
+    animation: blink-animation 3s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+
+/*  Class container the table and form  */
+.container {
+    margin: auto;
+    width: 50vw;
+    height: 100%;
+    border: 5px solid red;
+    background-color: #ffff06;
+    font-family: 'Myfonts', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Main table */
+table {
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #f00;
+    margin-top: 5px;
+    padding-top: 5px;
+    width: 40vw;
+    height: 25vh;
+    font-size: 30px;
+    font-weight: 80px;
+
+}
+
+
+/* Is a <tr> that tells the customers they can start make you order*/ 
+#parag {
+    text-align: center;
+    font-size: 35px;
+    background-color: transparent;
+    border-bottom: 5px solid red;
+    width: 40vw;
+    margin: auto;
+    color: #f00;
+    text-shadow: 1px 1px gray;
+}
+
+
+
+select {
+    color: gray;
+    height: 25px;
+    text-align: center;
+}
+
+option{
+    text-align: center;
+}
+input {
+    color: gray;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: #f4f3ef;
+    height: 25px;
+    width: 22vw;
+}
+
+/* "An empty link" that the customer can reset their password.
+I only created it because I would need one day. Link example */
+#forgot {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-decoration: none;
+    color: gray;
+    float: right;
+}
+
+#code {
+    font-size: 25px;
+
+}
+
+#btn-sub{
+    color: #f00;
+    background-color: #ffff06;
+    margin: 0;
+    padding: 0;
+    border-radius: 2em;
+    border: #f00 solid 1px;
+    font-family: 'Myfonts', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+
+
+}
+#btn-reset{
+    color: #f00;
+    background-color: #ffff06;
+    margin: 0;
+    padding: 0;
+    border-radius: 2em;
+    font-family: 'Myfonts', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 80px;
+    cursor: pointer;
+
+
+}
+#cost-burger{
+    visibility: hidden;
+    display: none;
+}
+/*  Footer,Contains the name: ORDER ONLINE. Informs the customer that he is on the correct page  */
+
+footer{
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    color: red; 
+    background-color: rgb(250, 246, 246);
+    font-family: 'Myfonts', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 5px;
+    animation: animate 1.5s linear infinite;
+    border: solid;
+    border-radius: 5px;
+
+
+}
+
+

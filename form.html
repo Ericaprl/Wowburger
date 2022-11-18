@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Order Now ! </title>
+
+    <!-- Title icon -->
+    <link rel="shortcut icon" href="./images/icon.jpg">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="external.css">
+
+</head>
+
+<body id="form-body">
+
+    <header>
+
+        <a href="/index.html"> Home </a>
+        <a href="/menu.html"> Menu </a>
+
+
+    </header>
+    <div id="order-online"> Order online </div>
+    <div class="container">
+        <table>
+            <form class="form-control">
+
+
+                <tr>
+                    <td>
+                        <label>Username </label> <br>
+                        <input id="username" type="text" name="Username" max= "10"placeholder="Username " required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> Passaword </label> <br>
+                        <input id="passaword" type="password" name="Passaword" minlength="9" maxlength="11"
+                        placeholder="" required/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <a id="forgot" href=""> Forgot your Passaword? </a>
+                    </td>
+                </tr>
+
+                <td>
+                    <br>
+                    <label id="parag"> Choose your WOW Burger <label>
+                </td>
+                <tr>
+                    <br>
+                    <td>
+                        <br>
+                        <label> What size would you prefer</label> <br>
+                        <select name="sizes" id="sizes" >
+                            <option value="WowBurges"> WOW Burges </option>
+                            <option id="large" value="Large"> 6oz Large - € 7.00  </option>
+                            <option id="exLarge"value="Extra-Large"> 10oz Extra-Large - € 9.00 </option>
+                            <option id="Supersize" value="Supersize" answer > 16oz Supersize - € 17.50 </option>
+
+                        </select>
+
+                    </td>
+                   
+                        
+                    </tr>
+                </tr>
+             
+                <tr>
+                    <td>
+                        <br>
+                        <label> How many would you like</label> <br>
+                        <input id="quantity" type="number" name="quantity" min="1" max="10" value="1" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                        <label id="dis-code" > Discount Code </label> <br>
+                        <input type="text" name="Descount" max="9" value="Limit one per order"/>
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                        <div id="thank-you" style="display: none;">
+                            <p>Thank you for your order !</p>
+                        </div>
+                        <button id="btn-sub" type="submit" > Submit </button> 
+
+                    </td>
+                </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+<footer>
+
+    Take a bite out of it
+
+</footer>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+
+    $('select').on('change', function () {
+				let option = $('select option').filter(':selected').val();
+				if(option == 'Supersize' ){
+					confirm("This is a supersize. Are you sure about your choice ?")
+				};
+			});
+
+</script>
+
+
+
+</html>
